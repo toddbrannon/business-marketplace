@@ -1,0 +1,11 @@
+.HeroSection {
+    position: absolute;
+    top: 14.5em;
+    width: 100%;
+    height: 20em;
+    background-color: #EEF4FD;
+    color: #13223A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
