@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './Navbar.module.css';
 import { RxCaretDown } from 'react-icons/rx';
 
-const Navbar = () => {
+
+const Navbar = ({ handleContentChange }) => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.brand}>
@@ -10,7 +11,7 @@ const Navbar = () => {
       </div>
       <ul className={styles.navLinks}>
         <li className={styles.navLink}>
-          <a href="#">How it works</a>
+          <a href="#" onMouseEnter={() => handleContentChange('New TopRow content')} onMouseLeave={() => handleContentChange('Initial TopRow content')}>How it works</a>
           <RxCaretDown className={styles.reactIconSpin}/>
         </li>
         <li className={styles.navLink}>
