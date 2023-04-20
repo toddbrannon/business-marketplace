@@ -3,7 +3,7 @@ import NavBar from '../NavBar/NavBar.jsx'; // adjust the path based on your file
 import styles from './TopRow.module.css';
 
 const TopRow = () => {
-  const [content, setContent] = useState('Initial TopRow content');
+  const [content, setContent] = useState('Top Row');
 
   const handleContentChange = (newContent) => {
     setContent(newContent);

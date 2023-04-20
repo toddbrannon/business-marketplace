@@ -11,15 +11,15 @@ const Navbar = ({ handleContentChange }) => {
       </div>
       <ul className={styles.navLinks}>
         <li className={styles.navLink}>
-          <a href="#" onMouseEnter={() => handleContentChange('New TopRow content')} onMouseLeave={() => handleContentChange('Initial TopRow content')}>How it works</a>
+          <a href="#" onMouseEnter={() => handleContentChange('How It Works')} onMouseLeave={() => handleContentChange('TopRow')}>How it works</a>
           <RxCaretDown className={styles.reactIconSpin}/>
         </li>
         <li className={styles.navLink}>
-          <a href="#">Sellers</a>
+          <a href="#" onMouseEnter={() => handleContentChange('Sellers')} onMouseLeave={() => handleContentChange('TopRow')}>Sellers</a>
           <RxCaretDown className={styles.reactIconSpin}/>
         </li>
         <li className={styles.navLink}>
-          <a href="#">Buyers</a>
+          <a href="#" onMouseEnter={() => handleContentChange('Buyers')} onMouseLeave={() => handleContentChange('TopRow')}>Buyers</a>
           <RxCaretDown className={styles.reactIconSpin}/>
         </li>
       </ul>
